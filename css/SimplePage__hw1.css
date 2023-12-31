@@ -1,0 +1,189 @@
+@import url('./resed.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap');
+
+:root {
+  --black-color: black;
+  --white-color: white;
+  --main-color: #16a085;
+  --ligth-background: #f5f6f7;
+  --dark-background: #2e343d;
+  --light-dark-background: #363d47;
+  --transition: all ease-in-out 0.5s;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  word-spacing: 6px;
+  transition: var(--transition);
+}
+
+.main-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+.header,
+.footer {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7rem;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.header__menu-link {
+  color: var(--main-color);
+  padding: 1.5rem;
+}
+
+.button {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  word-spacing: 6px;
+  font-size: 18px;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 3px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transition: var(--transition);
+}
+
+.header__theme-button {
+  padding: 0.5rem;
+  border: none;
+}
+
+.theme-button {
+  width: 3rem;
+  height: 3rem;
+  transition: var(--transition);
+  background: url(../img/moon-and-stars-svgrepo-com.svg) 0 0 / 100% no-repeat;
+}
+
+.main-content {
+  background-color: var(--ligth-background);
+}
+
+.image-conteiner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-conteiner {
+  padding: 2rem 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-header {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+.text-wrapper {
+  text-align: center;
+}
+
+.text-wrapper p {
+  padding-bottom: 2rem;
+}
+
+.text-button {
+  color: var(--white-color);
+  background: var(--main-color);
+}
+/* -------footer styles--------- */
+.footer-contacts_menu {
+}
+
+.footer_contacts-line {
+  color: var(--main-color);
+}
+/* .footer_copyright {} */
+
+/* --------hover styles-------- */
+
+.text-button:hover {
+  background-color: transparent;
+  color: var(--main-color);
+}
+.header__menu-link:hover {
+  color: var(--black-color);
+}
+.footer_menu-link:hover {
+  color: var(--main-color);
+}
+.header__theme-button:hover,
+.theme-button:hover {
+  color: var(--black-color);
+}
+.theme-button:hover {
+  background: url(../img/moon-and-stars-black.svg) 0 0 / 100% no-repeat;
+}
+
+/* ----------dark theme styles---------- */
+.main-conteiner.dark {
+  background-color: var(--dark-background);
+  color: var(--white-color);
+}
+
+.main-conteiner.dark .main-content {
+  background-color: var(--light-dark-background);
+}
+.main-conteiner.dark .theme-button {
+  background: url(../img/sun-svgrepo-com.svg) 0 0 / 100% no-repeat;
+}
+.main-conteiner.dark .theme-button:hover {
+  background: url(../img//sun-black.svg) 0 0 / 100% no-repeat;
+}
+
+.main-conteiner.dark .header__menu-link:hover {
+  color: var(--white-color);
+}
+.main-conteiner.dark .header__theme-button:hover,
+.main-conteiner.dark .theme-button:hover {
+  color: var(--white-color);
+}
+/* @media(prefers-color-scheme: dark) {
+  .main-conteiner{
+    background-color: var(--dark-background);
+    color: var(--white-color);
+  }
+  @media(prefers-color-scheme: light) {
+  .main-conteiner{
+    background-color: var(--ligth-background);
+    color: var(--black-color);
+  }
+} */
