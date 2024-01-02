@@ -74,18 +74,7 @@ body {
   align-items: center;
   padding: 1rem;
   transition: var(--transition);
-}
-
-.header__theme-button {
-  padding: 0.5rem;
-  border: none;
-}
-
-.theme-button {
-  width: 3rem;
-  height: 3rem;
-  transition: var(--transition);
-  background: url(../img/moon-and-stars-svgrepo-com.svg) 0 0 / 100% no-repeat;
+  cursor: pointer;
 }
 
 .main-content {
@@ -125,8 +114,8 @@ body {
   background: var(--main-color);
 }
 /* -------footer styles--------- */
-.footer-contacts_menu {
-}
+/* .footer-contacts_menu {
+} */
 
 .footer_contacts-line {
   color: var(--main-color);
@@ -145,12 +134,8 @@ body {
 .footer_menu-link:hover {
   color: var(--main-color);
 }
-.header__theme-button:hover,
-.theme-button:hover {
+.header__theme-button:hover {
   color: var(--black-color);
-}
-.theme-button:hover {
-  background: url(../img/moon-and-stars-black.svg) 0 0 / 100% no-repeat;
 }
 
 /* ----------dark theme styles---------- */
@@ -162,18 +147,11 @@ body {
 .main-conteiner.dark .main-content {
   background-color: var(--light-dark-background);
 }
-.main-conteiner.dark .theme-button {
-  background: url(../img/sun-svgrepo-com.svg) 0 0 / 100% no-repeat;
-}
-.main-conteiner.dark .theme-button:hover {
-  background: url(../img//sun-black.svg) 0 0 / 100% no-repeat;
-}
 
 .main-conteiner.dark .header__menu-link:hover {
   color: var(--white-color);
 }
-.main-conteiner.dark .header__theme-button:hover,
-.main-conteiner.dark .theme-button:hover {
+.main-conteiner.dark .header__theme-button:hover{
   color: var(--white-color);
 }
 /* @media(prefers-color-scheme: dark) {
@@ -187,3 +165,4 @@ body {
     color: var(--black-color);
   }
 } */
+/* -----responsive styles----- */
